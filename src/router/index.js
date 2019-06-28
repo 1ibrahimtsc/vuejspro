@@ -1,4 +1,4 @@
-import Hello from '../components/views/Hello'
+import ItemDetails from '../components/views/ItemDetails'
 import Test from '../components/views/Test'
 import Inventory from '../components/views/Inventory'
 
@@ -8,7 +8,7 @@ export const routes = [
         component: Inventory
     },
     {
-        path: '/test/:id',
-        component: Test
+        path: '/item/:id',
+        component: ItemDetails
     }
 ]
