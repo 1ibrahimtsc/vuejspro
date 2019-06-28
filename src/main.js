@@ -15,6 +15,7 @@ Vue.use(VueRouter)
 import { routes } from './router/index'
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 /* eslint-disable no-new */
