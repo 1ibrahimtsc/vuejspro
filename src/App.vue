@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-
+  <!-- 
    <router-link :to="{ path: '/' }" >Home</router-link>
    <router-link :to="{ path: '/test/1' }" >Test 1</router-link>
    <router-link :to="{ path: '/test/2' }" >Test 2</router-link>
    <router-link :to="{ path: '/test/3' }" >Test 3</router-link>
-    <router-view></router-view>
-     <!-- <navbar  @search="search"></navbar>
+      -->
+     <navbar  @search="search"></navbar>
        <div class="container">
         <div class="row">
           <div class="col-sm-9">
-            <Inventory @newItemAdded="addCartItem" :items="items" ></Inventory>
+          <router-view></router-view>
+          <!--  <Inventory @newItemAdded="addCartItem" :items="items" ></Inventory> -->
       </div>
       <div class="col-sm-3">
           <cart @itemRemove="removeItem" :items="cart" ></cart>
       </div>
     </div>
-  </div> -->      
+  </div>       
 </div>
 </template>
 
