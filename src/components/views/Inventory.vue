@@ -17,17 +17,26 @@
             </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
 data(){
   return {
     items: []
   }
 },
+mounted(){
+  this.fechInventory()
+},
 methods: {
   addToCart(item){
    this.$emit('newItemAdded', item)
+  },
+  fechInventory(){
+   axios.get('http://localhost:3000/items').then(response => {
+     console.log(response)
+   })
   }
-}
+ }
 }
 </script>
 
