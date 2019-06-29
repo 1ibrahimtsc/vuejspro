@@ -32,8 +32,8 @@ methods: {
    this.$emit('newItemAdded', item)
   },
   fechInventory(){
-   axios.get('http://localhost:3000/items').then(response => {
-     console.log(response)
+     axios.get('http://localhost:3000/items').then(response => {
+     this.items = response.data
    })
   }
  }
